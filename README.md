@@ -1,4 +1,4 @@
-*** 🍽️ Green Restaurant ***
+# 🍽️ Green Restaurant 
 Green Restaurant is a full-stack food ordering and review web application built with modern technologies. It provides users with a smooth experience to browse foods, view details, manage cart, and post reviews with full CRUD functionality
 # 🚀 Tech Stack
 ## Frontend
@@ -28,38 +28,38 @@ Used before adding to cart
 # 🛒 Add to Cart Page
 Shows all added food items
 ### Buy button for each item (on working...)
-Cart data stored in MongoDB
-* ⭐ Review System
+# Cart data stored in MongoDB
+## ⭐ Review System
 Users can add reviews
 Reviews stored in MongoDB
 Reviews can be:
-* Update
-* Delete
+### Update
+### Delete
 Changes reflect in real time
-🧭 Navbar (Global)
-Green Restaurant (brand name)
-Home
-Food Items
-Add to Cart
-🔍 Search Feature
+# 🧭 Navbar (Global)
+#### Green Restaurant (brand name)
+#### Home
+#### Food Items
+#### Add to Cart
+#### 🔍 Search Feature
 Live search for food items
-* 👤 Authentication
+# 👤 Authentication
 If not logged in → Login button
 If logged in → Profile image + name + Sign out button
 🗄️ Database (MongoDB)
-Food collection
-Cart collection
-Review collection
-Supports
-Create
-Read
-Update
-Delete
-🎯 Project Goal
-* To practice full-stack development with:
+## Food collection
+## Cart collection
+## Review collection
+## Supports
+## Create
+## Read
+## Update
+##  Delete
+# 🎯 Project Goal
+To practice full-stack development with:
 Authentication system
 CRUD operations
 Cart functionality
 Dynamic UI updates
-⚡ Summary
+# ⚡ Summary
 Green Restaurant is a complete MERN-style food ordering system with authentication, cart, search, and review management features.
