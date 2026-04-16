@@ -12,8 +12,7 @@ const Root = () => {
       <Navbar ></Navbar>
       <div className="pt-24">
         <Outlet />
-
-      </div>
+       </div>
       <Footer></Footer>
   </SearchProvider>
   

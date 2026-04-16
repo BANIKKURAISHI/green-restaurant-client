@@ -17,7 +17,7 @@ const deleteReviewButton=async(id)=>{
 
   try {
   console.log(id)
-  const result =await axios.delete(`http://localhost:3000/feedback/${id}`)
+  const result =await axios.delete(`https://green-restaurant-server.vercel.app/feedback/${id}`)
   if(result.data.deletedCount >0){
     const remaining=reviews.filter(rev=>rev._id !== id)
     setReviews(remaining)

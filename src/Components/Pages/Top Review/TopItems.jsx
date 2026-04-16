@@ -6,7 +6,7 @@ const TopItems = () => {
     const [topFood,setTopFood]=useState()
     useEffect(()=>{
         const topfood=async()=>{
-            const food=await axios.get('http://localhost:3000/topfood')
+            const food=await axios.get('https://green-restaurant-server.vercel.app/topfood')
             setTopFood(food.data)
         }
         topfood()

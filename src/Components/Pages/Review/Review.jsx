@@ -49,7 +49,7 @@ const Review = () => {
     try {
       const reviewPost = await axios({
         method: "post",
-        url: "http://localhost:3000/feedback",
+        url: "https://green-restaurant-server.vercel.app/feedback",
         data: userFeedback,
       });
       if (reviewPost) {
@@ -66,7 +66,7 @@ const Review = () => {
   useEffect(() => {
     const getReviews = async () => {
       try {
-        const result = await axios.get("http://localhost:3000/feedback");
+        const result = await axios.get("https://green-restaurant-server.vercel.app/feedback");
         setReviews(result.data);
         
       } catch (error) {

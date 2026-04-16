@@ -5,12 +5,13 @@ import { SearchContext } from '../Context/SearchContex';
 
 const FoodItems = () => {
     const { searchText } = useContext(SearchContext);
-    const foodDatas=useLoaderData()
-   
+    console.log("search:", searchText);
+    const foodDatas = useLoaderData() || [];
+    console.log(foodDatas)
 
-    const filteredFoods = foodDatas.filter((food) =>
-    food.name.toLowerCase().includes((searchText || "").toLowerCase())
-    );
+     const filteredFoods = foodDatas.filter((food) =>
+     food?.name?.toLowerCase().includes((searchText || "").toLowerCase())
+     );
     return (
         <div className='grid mx-10 mb-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
            

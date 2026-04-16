@@ -11,7 +11,7 @@ const datum=useLoaderData()
 const [add,setAdd]=useState(datum) 
 const removeButton=async(id)=>{
       try {
-      const result = await axios.delete(`http://localhost:3000/postFood/${id}`);
+      const result = await axios.delete(`https://green-restaurant-server.vercel.app/postFood/${id}`);
    
       if (result.data.deletedCount > 0) {
         setAdd(prev => prev.filter(item => item._id !== id));

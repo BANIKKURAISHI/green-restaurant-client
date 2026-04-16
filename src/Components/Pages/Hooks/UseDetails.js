@@ -9,7 +9,7 @@ const useFoodDetails=(id)=>{
        if(!id) return 
        const foodDetails=async()=>{
        try {
-        const result =await axios.get(`http://localhost:3000/foodList/${id}`)
+        const result =await axios.get(`https://green-restaurant-server.vercel.app/${id}`)
         setDetails(result.data)
        } catch (error) {
         console.log(error)

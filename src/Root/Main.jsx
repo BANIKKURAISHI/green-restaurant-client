@@ -22,8 +22,9 @@ const router = createBrowserRouter([
         path:"/fooditems",
         Component:FoodItems,
         loader:async()=>{
-            const res=await(axios.get("http://localhost:3000/foodList"))
+            const res=await(axios.get("https://green-restaurant-server.vercel.app/foodList"))
             return res.data
+            console.log(res.data)
      }
       },
        {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
         path: "/addCart",
         Component:AddCards,
            loader:async()=>{
-            const res=await(axios.get("http://localhost:3000/postFood"))
+            const res=await(axios.get("https://green-restaurant-server.vercel.app/postFood"))
             return res.data
      }
       },

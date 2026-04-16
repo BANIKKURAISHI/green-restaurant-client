@@ -5,6 +5,7 @@ import { SearchContext } from '../Context/SearchContex';
 
 const Navbar = () => {
    const { searchText, setSearchText } = useContext(SearchContext); 
+   console.log("navbar:", searchText);
 
   const {user,singOut}=use(AuthContext)
     const links=[
@@ -54,7 +55,7 @@ const Navbar = () => {
     </div>
     <div className="navbar-end">
       <input  value={searchText}
-      onChange={(e) => setSearchText(e.target.value)} type="text" placeholder="Search your favorite food" className="input mr-3 border-b-blue-500 text-black  w-64 lg:w-auto" />
+      onChange={(e) => setSearchText(e.target.value)} type="text" placeholder="Search your favorite food" className="input mr-3 border-b-blue-500 text-white  w-64 lg:w-auto" />
       <div>
         {
     user ?(<><div className='flex flex-row-reverse gap-0.5'>
